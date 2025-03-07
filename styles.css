@@ -1,0 +1,62 @@
+body {
+background-color: orange;
+
+}
+
+nav {
+    background-color: blueviolet;
+}
+
+.divControle1 {
+    display: flex;
+    width: 80vw ;
+    height:300px ;
+}
+
+.divControle2 {
+    display: flex;
+    width: 80vw ;
+}
+
+.nomePerfil {
+    display: flex;
+}
+
+.fotoPerfil {
+    width: 200px ;
+    height:200px ;
+    margin-right: 150px;
+}
+
+.formacaoPerfil {
+    display: flex;
+}
+
+.contatoText {
+    display: flex;
+}
+
+.contatoInformationText {
+    display: flex;
+}
+
+.pageBox1 {
+    display: block;
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw ;
+    height:300px ;
+    padding: 50px;
+}
+
+.pageBox2 {
+    display: block;
+    background-color: brown;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw ;
+    height:300px ;
+    padding: 50px;
+}
