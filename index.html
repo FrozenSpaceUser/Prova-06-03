@@ -2,31 +2,136 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Curriculum </title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <nav>
-        <p> teste </p>
+        <nav class="navigationBar">
+            <p> Web Portfifólio </p>
+            <a href="#home"> Home </a>
+            <a href="#habilidadesCompetencias"> Habilidades </a>
+            <a href="#historicoProfissional"> Histórico </a>
+            <a href="#formacaoAcademica"> Formação </a>
+            <a href="#contato"> Contato </a>
+        </nav>
     </nav>
 
-    <div class="pageBox1">
-        <div class="divControle1">
-           <img src="images/foto_trabalho.jpg" alt="fotoPerfil" class="fotoPerfil">
-           <h2 class= "nomePerfil"> Gustavo Henrique de Oliveira </h2>
-           <p class="FormacaoPerfil"> Técnico em Jogos Digitais </p>
+    <section id="home">
+        <div class="pageBox1">
+            <div class="divControle1">
+               <img src="images/foto_trabalho.jpg" alt="fotoPerfil" class="fotoPerfil" draggable="false">
+               <p class= "nomePerfil"> Gustavo Henrique de Oliveira </p>
+               <p class="formacaoPerfil"> Técnico em Jogos Digitais </p>
+               <p class="descricaoPerfil"> Sou apaixonado por tecnologia e inovação, com experiência em suporte técnico, manutenção de computadores e programação. Meu objetivo é oferecer soluções eficientes, garantindo qualidade e desempenho para sistemas e dispositivos. </p>
+            </div>
         </div>
-
-        <div class="divControle2">
-            <p class="contatoText"> Contato:</p>
-            <p class="contatoInformationText"> [] telefone: (34)998294273 | [] email: oliveira.guhe@gmail.com </p>
-        </div>
-    </div>
-
+    </section>
+    
+<section id="habilidadesCompetencias">
     <div class="pageBox2"> 
+        <div class="divControleTitle1">
+            <h2 class="title1"> Habilidades e Competencias </h2>
+        </div>
+        <div class="divControle2">
+            <ol class="listaHabilidades1">
+                <li> Inglês Intermediário </li>
+                <li> Habilidade em informática </li>
+                <li> Capacidade de trabalhar remotamente </li>
+            </ol>
+
+            <ol class="listaHabilidades2">
+                <li> Lógica de Programação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li> Pensamento Crítico </li>
+                <li> Criatividade </li>
+            </ol>
+        </div>
+    </div>
+</section>
+
+<section id="historicoProfissional">
+    <div class="pageBox3">
+        <div class="divControleTitle1">
+            <h2 class="title2"> Histórico Profissional </h2>
+        </div>
+        <div class="divControle3">
+            <div class="divControle3-1">
+                <h3> Jovem Aprendiz - Suporte TI </h3>
+                <h3> Colégio São Domingos (Fev/2021 - Nov/2021) </h3>
+                <p> Apoio no atendimento técnico, auxiliando na
+                    identificação e resolução de incidentes envolvendo
+                    conectividade, aplicações e dispositivos. </p>
+                <p> Suporte a professores na utilização de lousas digitais e
+                    ferramentas tecnológicas. </p>
+            </div>
+            <div class="divControle3-2">
+                <h3> Suporte TI </h3>
+                <h3> Colégio São Domingos (Jul/2023 - Atualmente) </h3>
+                <p> Prestação de suporte técnico a colaboradores e corpo
+                    docente, garantindo a resolução eficaz de problemas
+                    relacionados a hardware, software e conectividade. </p>
+                <p> Diagnóstico e manutenção preventiva de computadores e
+                    dispositivos periféricos, assegurando a continuidade
+                    operacional. </p>
+                <p> Monitoramento da infraestrutura de rede, atuando na
+                    identificação e mitigação de falhas para otimizar a
+                    estabilidade do sistema. </p>
+             </div>
+        </div>
+    </div>
+</section>
+    
+<section id="formacaoAcademica">
+    <div class="pageBox4">
+        <div class="divControleTitle1">
+            <h2 class="title3"> Formação Acadêmica </h2>
+        </div>
+        <div class="divControle4">
+            <div class="divControle4-1">
+                <h3> Bit Araxá Educação Profissional </h3>
+                <h3> Técnico em Informática (2023 - Atualmente) </h3>
+                <p> Lógica de programação e algoritmos </p>
+                <p> Banco de dados </p>
+                <p> Marketing </p>
+                <p> Programação Web </p>
+                <p> Manuteção de Computadores </p>
+                <p> Sistemas de Rede de Internet </p>
+                <p> Edição de vídeo </p>
+            </div>
+            <div class="divControle4-2">
+                <h3> Universidade de Uberaba (UNIUBE) </h3>
+                <h3> Curso Superior de Tecnologia em Jogos
+                    Digitais (2018 - 2020) </h3>
+                <p> Lógica de programação e algoritmos </p>
+                <p> Banco de dados </p>
+                <p> Estudo e desenvolvimento de jogos </p>
+                <p> Roteirização para jogos digitais </p>
+                <p> Arte 3D e 2D </p>
+                <p> Edição de vídeo e áudio </p>
+             </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="pageBox5">
+        <div class="divControleTitle1">
+            <h2 class="title4"> Contato </h2>
+        </div>
+        <div class="divControle5">
+            <p><strong>Email:</strong> </p>
+            <a href="mailto:oliveira.guhe@gmail.com" class="contatoText"> oliveira.guhe@gmail.com </a>
+            <p><strong>Telefone:</strong></p>
+            <a href="tel:+5534998294273" class="contatoText"> (55) 34 99829-4273 </a>
+        </div>
 
     </div>
+</section>
+
+    
 
 
 </body>

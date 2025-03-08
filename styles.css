@@ -1,35 +1,101 @@
 body {
-background-color: orange;
+background-color: #dee1e6;
+color: #dee1e6;
+font-family: "Urbanist", sans-serif;
+font-weight: normal;
+margin: 0px;
+padding-left: 200px;
 
 }
 
-nav {
-    background-color: blueviolet;
+.navigationBar p {
+    font-size: 35px;
+    color: #dee1e6;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+
+.navigationBar a {
+    margin: 10px 0;
+    font-size: 25px;
+    color: #dee1e6;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigationBar a:hover {
+    color: #c2820a;
+    text-decoration: underline;
+}
+
+.navigationBar a:active {
+    color: #634817;
+}
+
+.navigationBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -200px;
+    height: 100vh;
+    padding: 20px;
+    background-color: #212529;
+    position: fixed;
+    width: 200px;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.pageBox1 {
+    display: block;
+    background-color: #012A4A;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw ;
+    height:500px ;
+    padding: 50px;
+    border-radius: 40px;
 }
 
 .divControle1 {
     display: flex;
-    width: 80vw ;
-    height:300px ;
-}
-
-.divControle2 {
-    display: flex;
-    width: 80vw ;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw ;
+    height:500px ;
 }
 
 .nomePerfil {
     display: flex;
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: -10px;
 }
 
 .fotoPerfil {
-    width: 200px ;
-    height:200px ;
-    margin-right: 150px;
+    width: 250px ;
+    height:250px ;
+    border-radius: 60px;
+    user-select: none;
+    user-select: none
 }
 
 .formacaoPerfil {
     display: flex;
+    font-size: 25px;
+    background-color:#ad7f29; 
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.descricaoPerfil{
+    display: flex;
+    text-align: center;
+    font-size: 18px
 }
 
 .contatoText {
@@ -40,23 +106,293 @@ nav {
     display: flex;
 }
 
-.pageBox1 {
-    display: block;
-    background-color: brown;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80vw ;
-    height:300px ;
-    padding: 50px;
-}
-
 .pageBox2 {
     display: block;
-    background-color: brown;
-    margin-top: 50px;
+    background-color: #012A4A;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw ;
-    height:300px ;
+    width: 70vw ;
+    height:580px ;
     padding: 50px;
+    border-radius: 40px;
+}
+
+.divControleTitle1 {
+    display: flex;
+    width: 70vw ;
+    height:80px ;
+    justify-content: center;
+}
+
+.divControle2 {
+    display: flex;
+    width: 70vw ;
+    height:500px ;
+    justify-content: space-between;
+    align-items: center
+}
+
+.title1 {
+    display: flex;
+    font-size: 28px;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.listaHabilidades1 {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    margin-left: 50px;
+    counter-reset: lista-counter;
+}
+
+.listaHabilidades2{
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+ol {
+	list-style: none;
+	padding: 0;
+    margin: 0;
+}
+
+li + li {
+	margin-top: 50px;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	background:#017D5E;
+	padding: 24px;
+	border-radius: 16px;
+	width: 100%;
+	box-shadow: 4px 4px 12px rgb(0 0 0 / 0.1);
+    margin-top: 16px;
+    counter-increment: lista-counter;
+}
+
+li::before {
+	content: counter(lista-counter);
+	font-size: 48px;
+	font-weight: 700;
+	width: 64px;
+	height: 64px;
+	background: black;
+	border-radius: 50%;
+	color: #dee1e6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pageBox3 {
+    display: block;
+    background-color: #012A4A;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw ;
+    height:580px ;
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.title2 {
+    display: flex;
+    font-size: 28px;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.divControle3 {
+    display: flex;
+    width: 70vw ;
+    height:400px ;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.divControle3-1 {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.divControle3-1 h3:first-of-type::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+    background-color: #017D5E;
+    margin-right: 8px;
+}
+
+.divControle3-1 h3:first-of-type {
+    margin-left: -30px;
+}
+
+.divControle3-2 {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.divControle3-2 h3:first-of-type::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+    background-color: #017D5E;
+    margin-right: 8px;
+}
+
+.divControle3-2 h3:first-of-type {
+    margin-left: -30px;
+}
+
+.divControle3 p::before {
+    content: "\27A4";
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #017D5E;
+    margin-right: 8px; /* Espaço entre o quadrado e o texto */
+}
+
+.pageBox4 {
+    display: block;
+    background-color: #012A4A;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw ;
+    height:780px ;
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.title3 {
+    display: flex;
+    font-size: 28px;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.divControle4 {
+    display: flex;
+    width: 70vw ;
+    height:600px ;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.divControle4-1 {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.divControle4-1 h3:first-of-type::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+    background-color: #017D5E;
+    margin-right: 8px;
+}
+
+.divControle4-1 h3:first-of-type {
+    margin-left: -30px;
+}
+
+.divControle4-2 {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.divControle4-2 h3:first-of-type::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px; 
+    background-color:#017D5E;
+    margin-right: 8px;
+}
+
+.divControle4-2 h3:first-of-type {
+    margin-left: -30px;
+}
+
+.divControle4 p::before {
+    content: "\27A4";
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #017D5E;
+    margin-right: 8px; /* Espaço entre o quadrado e o texto */
+}
+
+.pageBox5 {
+    display: block;
+    background-color: #012A4A;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw ;
+    height:200px ;
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.title4 {
+    display: flex;
+    font-size: 28px;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.divControle5 {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 50vw ;
+    height:100px ;
+}
+
+.divControle5 p {
+    font-size: 18px;
+}
+
+.divControle5 a {
+    margin-top: -10px;
+    font-size: 18px;
+    color: #c2820a;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.divControle5 a:hover {
+    text-decoration: underline;
+}
+
+.divControle5 a:active {
+    color: #634817;
 }
